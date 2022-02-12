@@ -13,44 +13,81 @@ body {
   overflow: hidden;
 }
 
-.box-center {
+.box-center,.box-center-2 {
   display: flex;
   justify-content: center;
 }
 .box-card {
-  background: rgba(255, 255, 255, 0.2);
-  height: 400px;
-  box-shadow: 0 15px 35px rgb(0 0 0 / 40%);
+  display: grid;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
   border-radius: 15px;
-  padding: 20px 0;
+  padding-top: 30px;
+  margin: 0 20px;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 .box-image{
-    width: 150px;
-    height: 150px;
-    background: #fff;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.5s;
 }
 .box-image img {
-  width: 100%;
-  border-radius: 15px;
+  width: 95%;
+  align-items: center;
+  box-shadow: 0 15px 35px rgb(0 0 0 / 60%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+}
+.box-card:hover .box-image{
+  opacity: 1;
+  transform: translateY(-20px);
 }
 .box-card:hover {
   box-shadow: 0 15px 35px rgb(0 0 0 / 60%);
-  transition: 0.9s;
+  opacity: 1;
+}
+.box-card:hover .box-footer .box{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.box-content h1{
+  color: #fff;
 }
 .box-footer {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .box {
   position: relative;
   display: inline-block;
-  margin-right: 20px;
+  margin: 0 10px;
   cursor: pointer;
+  transition: 0.5s;
+  transform: translateY(40px);
+  margin: 0 10px;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
+}
+.box.fb a i{
+  box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+  border-radius: 50%;
+}
+.box.in a i{
+  box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+  border-radius: 50%;
 }
 .box i{
     font-size: 32px;
-    color: aliceblue;
+    height: 30px;
+    color: #fff;
 }
 @media (max-width: 576px) {
   .box-center {
@@ -59,4 +96,61 @@ body {
   .box-card {
     margin: 40px;
   }
+}
+
+.heart {
+  width: 50px;
+  margin-bottom: 20px;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(0.9);
+  }
+
+  45% {
+    transform: scale(1.1);
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+.container .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.time {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time h2,
+.time p {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.time h2 {
+  font-size: 2.4rem;
+}
+
+.time p {
+  font-size: 1.5rem;
+}
+
+.sup-time {
+  font-weight: 300;
 }

@@ -2,7 +2,8 @@
 .roundSmall,
 .roundMedium,
 .roundLarge {
-  background: #fff;
+  background: url(https://freepngimg.com/thumb/heart/36840-6-pink-heart-photos.png);
+  background-size: 100% 100%;
   border-radius: 50%;
   position: absolute;
   width: 4px;
@@ -22,7 +23,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background: url(http://www.freepngimg.com/thumb/snowflakes/52-snowflake-png-image-thumb.png);
+  background: url(https://freepngimg.com/thumb/heart/2-2-heart-png-hd.png);
   background-size: 100% 100%;
 }
 .starMedium {
@@ -39,7 +40,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  background: url(http://pngimg.com/upload/snowflakes_PNG7576.png);
+  background: url(https://freepngimg.com/thumb/heart/37044-4-3d-red-heart-image.png);
   background-size: 100% 100%;
 }
 .realMedium {
@@ -57,8 +58,9 @@
   width: 20px;
   height: 20px;
   background-size: 100% 100%;
-  background: url(http://pngimg.com/upload/snowflakes_PNG7559.png);
+  background: url(https://freepngimg.com/thumb/heart/37044-4-3d-red-heart-image.png);
   background-size: 100% 100%;
+  opacity: 0.7;
 }
 .sharpMedium {
   width: 28px;
@@ -72,9 +74,9 @@
 .ringMedium,
 .ringLarge {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  background-image: url(http://www.freepngimg.com/thumb/snowflakes/13-white-snowflake-png-image-thumb.png);
+  width: 30px;
+  height: 30px;
+  background-image: url(https://freepngimg.com/thumb/heart/2-2-heart-png-hd.png);
   background-size: 100% 100%;
 }
 .ringMedium {
