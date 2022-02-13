@@ -49,7 +49,7 @@ function R(min, max) {
 TweenMax.set($(".box-center"), { opacity: 0 });
 TweenMax.staggerTo($(".box-center"), 5, { opacity: 1 }, 0.1);
 
-// $(".box-card").click(function () {
+// $(".button").click(function () {
 //   TweenMax.staggerTo($(".box-card"), 1, { y: -700 }, 0);
 //   $(".box-card").delay(1000).hide(1000);
 //   TweenMax.staggerTo($(".box-center-2"), 5, { opacity: 1 }, 0.1);
@@ -88,7 +88,6 @@ document.addEventListener(
 	  var second = document.querySelector(".second");
   
 	  var startDate = new Date(2021,11,06);
-	  console.log(startDate);
 	  days.innerText = Math.floor((new Date() - startDate) / 86400000);
 	  countTime();
   

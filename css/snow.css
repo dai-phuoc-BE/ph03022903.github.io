@@ -40,6 +40,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
+  opacity: 0.7;
   background: url(https://freepngimg.com/thumb/heart/37044-4-3d-red-heart-image.png);
   background-size: 100% 100%;
 }

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 body {
   background-image: url(../image/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Quicksand', sans-serif;
 }
 body {
   position: relative;
@@ -20,13 +23,16 @@ body {
 .box-card {
   display: grid;
   height: 350px;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+  background: rgba(0, 0, 0, 0.63);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 60%);
   border-radius: 15px;
   padding-top: 30px;
   margin: 0 20px;
   opacity: 0.7;
   transition: 0.5s;
+}
+.box-center-time{
+  background: rgba(0, 0, 0, 0.89);
 }
 .box-image{
     width: 200px;
@@ -49,8 +55,7 @@ body {
   opacity: 1;
   transform: translateY(-20px);
 }
-.box-card:hover {
-  box-shadow: 0 15px 35px rgb(0 0 0 / 60%);
+.box-card:hover,.box-card:hover .content {
   opacity: 1;
 }
 .box-card:hover .box-footer .box{
@@ -59,6 +64,10 @@ body {
 }
 .box-content h1{
   color: #fff;
+}
+.box-content p{
+  color: rgb(255, 166, 0);
+  margin: 0;
 }
 .box-footer {
     display: flex;
@@ -131,6 +140,7 @@ body {
   align-items: center;
   flex-direction: column;
   transition: 0.5s;
+  font-family: 'Moon Dance', cursive;
 }
 .time {
   color: #fff;
@@ -139,7 +149,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.days span{
+  color: red;
+  font-size: 6.5rem;
+}
 .time h2,
 .time p {
   margin: 0;
@@ -147,13 +160,24 @@ body {
 }
 
 .time h2 {
-  font-size: 2.4rem;
+  font-size: 3rem;
+  
 }
 
 .time p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #00ffb8;
 }
 
 .sup-time {
   font-weight: 300;
+}
+.button{
+  border-radius: 50px;
+  background: rgb(0 0 0 / 0%);
+  border-bottom: 1px solid rgb(255 255 255);
+  box-shadow: none;
+}
+.button:hover{
+  box-shadow: none;
 }
