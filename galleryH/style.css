@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap');
 
         html,
         body {
@@ -12,7 +13,7 @@
             margin: 0;
             padding: 0;
             background-color: #fff;
-            background: linear-gradient(0deg, rgb(241 58 134 / 10%), rgb(229 37 73 / 0%)), linear-gradient(120deg, rgb(233 50 101 / 20%), rgba(0, 0, 100, 0));
+            background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
             overflow: hidden;
         }
 
@@ -127,6 +128,7 @@
         }
         [dataTool] {
             cursor: pointer;
+            transition: 1s;
           }
           /* Base styles for the entire c-tooltip */
           [dataTool]:before,
@@ -149,6 +151,7 @@
           [dataTool]:hover:after,
           [dataTool]:focus:before,
           [dataTool]:focus:after {
+            transition: 1s;
             visibility: visible;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -163,12 +166,12 @@
           }
           /* Base styles for the c-tooltip's content area */
           [dataTool]:after {
-            font-family: "Courier Prime", monospace;
+            font-family: 'Dosis', sans-serif;
             z-index: 1000;
-            padding: 8px;
-            width: 90px;;
-            background-color: rgba(51, 51, 51, 0.9);
-            color: #fff;
+            padding: 4px;
+            width: 80px;;
+            background-color: rgba(51, 51, 51, 0.938);
+            color: #000;
             content: attr(dataTool);
             font-size: 14px;
             line-height: 1.2;
@@ -182,11 +185,11 @@
           }
           [dataTool]:after {
             bottom: 123%;
-            background: rgb(255 255 255 / 23%);
+            background: rgba(255, 255, 255, 0.541);
           }
           [dataTool]:before{
             margin-left: -6px;
             margin-bottom: -5px;
-            border-top-color: rgb(255 255 255 / 23%);
+            border-top-color: rgb(255 255 255 / 50%);
           }
           /* Horizontally align top/bottom c-tooltips */
