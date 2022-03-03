@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 body {
-  background-image: url(../image/background.jpg);
+  /* background-image: url(../image/background.jpg); */
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Quicksand', sans-serif;
@@ -23,12 +24,12 @@ body {
 .box-card {
   display: grid;
   height: 350px;
-  background: rgba(0, 0, 0, 0.63);
+  background: rgb(0 0 0 / 19%);
   box-shadow: 0 10px 30px rgb(0 0 0 / 60%);
   border-radius: 15px;
   padding-top: 30px;
   margin: 0 20px;
-  opacity: 0.7;
+  opacity: 0.9;
   transition: 0.5s;
 }
 .box-center-time{
@@ -55,7 +56,8 @@ body {
   opacity: 1;
   transform: translateY(-20px);
 }
-.box-card:hover,.box-card:hover .content {
+.box-card:hover,.box-card:hover {
+  background: rgba(0, 0, 0, 0.719);
   opacity: 1;
 }
 .box-card:hover .box-footer .box{
