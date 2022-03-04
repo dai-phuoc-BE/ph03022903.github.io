@@ -16,8 +16,10 @@ body {
   align-items: center;
   overflow: hidden;
 }
-
-.box-center,.box-center-2 {
+.box-center-2{
+  display: none;
+}
+.box-center {
   display: flex;
   justify-content: center;
 }
